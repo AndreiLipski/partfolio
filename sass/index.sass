@@ -1,0 +1,341 @@
+body
+    font-family: Rubik
+    font-weight: 300
+a
+    text-decoration: none
+p
+    margin-bottom: 0
+h1
+    text-align: center
+    border-bottom: double 4px
+    border-width: 12px
+ul
+    padding: 0
+
+.box-1
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 12vh
+.header
+    height: 96p
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: #413e86;
+.header-color
+    width: 100%
+    background: #413e86;
+    margin-bottom: 3rem
+.header-wrapper
+    display: flex
+    justify-content: space-between
+.img-logo
+.logo-text
+    font-size: 3rem
+    font-family: 'El Messiri', sans-serif
+    color: #fff
+.nav-menu
+    display: flex
+    align-items: center
+    height: 96px
+.nav
+    display: flex
+    align-items: center
+    &__list
+        margin-right: 2rem
+
+.nav__list_h1:hover
+    color: #4377cb;
+    transition: 0.4s
+.nav-header
+    color: #ffff
+.link__nav
+    font-size: 1.2rem
+    color: #ffff
+    &_1
+        display: flex
+        width: 100%
+.fa-brands
+    color: #fff
+    font-size: 2rem
+.nav-hamburger
+    display: none
+.btn_hamb
+    padding: 0
+.box-hamb
+    display: flex
+    &__a
+        padding-top: 10px
+        margin-right: 20px
+        &:last-child
+            margin-right: 0
+
+
+.wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__img-box
+        width: 48%
+        border-radius: 5%
+        overflow: hidden
+    &__img
+        width: 100%
+        height: 100%
+        &::hover::after
+            content: attr(data-title)
+    &__text-box
+        width: 48%
+    &__li
+        font-size: 1.8rem
+        text-align: center
+        padding: 0
+        color: #423e86ac
+.text
+    &_about
+        font-size: 1.2rem
+        margin-bottom: 1rem
+    &_list
+        font-size: 1.8rem
+        margin-bottom: 1rem
+.text-title
+    font-size: 2rem
+    font-weight: 500
+    border-bottom: 4px double
+    border-width: 5px
+    margin-bottom: 1.2rem
+    &_center
+        text-align: center
+.text-reference
+    font-size: 1.4rem
+    color: #423e86ac
+    margin-bottom: 1.2rem
+.wrapper_1
+    margin-top: 120px
+    margin-bottom: 3rem
+.wrapper_2
+    margin-bottom: 3rem
+.wrapper_3
+    margin-bottom: 3rem
+.box-instagram
+    display: flex
+    margin-bottom: 3rem
+    &__box-l
+        display: flex
+        justify-content: space-around
+        margin-right: 1.4rem
+        width: 50%
+        &:last-child
+            margin: 0
+    &__a
+        margin-right: 1.4rem
+        width: 33.33%
+        height: 100%
+        &:hover
+            -webkit-box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28);
+            -moz-box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28);
+            box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28);
+            border-radius: 10px
+        &:last-child
+            margin: 0
+    &__box-img
+        border-radius: 10px
+        overflow: hidden
+        width: 100%
+        height: 100%
+    &__img
+        width: 100%
+        height: 100%
+
+.icons_sm
+    width: 60px
+.box-skil
+    height: 100%
+.bi_1
+    color: #413e86
+.btn
+    background-color: #413e86
+    border: 0
+    font-size: 1rem
+.btn:hover
+    background: #4377cb;
+.blog-menu
+    display: none
+.main-footer
+    background: #4c489d
+    width: 100%
+    border-top: 4px ridge #1a1c4021
+    padding: 2vh 0
+    &__nav
+        text-align: center
+    &__link
+        text-decoration: none
+        color: #ffffff;
+        font-size: 1rem
+        &_h1:hover
+            color: #4377cb
+            transition: 0.4s
+
+.nav_footer
+    font-size: 1rem
+    color: #ffffff;
+
+.nav__list_h2:hover
+    color: #4377cb
+    transition: 0.4s
+.nav__list
+    &:last-child
+        margin-right: 0
+.footer-text
+    color: #fff
+
+@media (max-width: 1200px)
+    .box-1
+        padding: 0 10vh
+    .link__nav
+        font-size: 1rem
+    .wrapper
+        &__img-box
+            width: 48%
+        &__img
+            width: 100%
+            height: 100%
+        &__li
+            font-size: 1.4rem
+    .text
+        &_about
+            font-size: 1.2rem
+        &_list
+            font-size: 1.4rem
+    .text-title
+        font-size: 1.6rem
+
+@media (max-width: 992px)
+    .nav_footer
+        display: none
+    .main-footer__nav
+        justify-content: center
+    .nav-header
+        display: none
+    .nav-hamburger
+        display: flex
+        align-items: center
+    .offcanvas 
+        --bs-offcanvas-height: 220px
+        background: #423e86dd
+    .offcanvas-header
+        justify-content: center
+        padding: 0
+        padding-top: 20px
+    .nav
+        &__li
+            padding: 0
+            text-align: center
+    .btn-close 
+        position: absolute
+        top: 27px
+        right: 52px
+        background: 
+        border: 0
+        color: #ffffff
+        opacity: 1
+    .hamburger
+        &__a
+            color: #ffffff
+    .fa-brands
+        padding: 0
+    .bi-2
+        color: #ffffff
+        background: #423e86
+    .header-color
+        margin-bottom: 1.6rem
+    .wrepper_r
+        flex-direction: column-reverse
+        margin-bottom: 1rem
+    .wrepper_l
+        flex-direction: column
+        margin-bottom: 1rem
+
+    .wrapper
+        &__img-box
+            width: 100%
+            margin-bottom: 1rem
+        &__img
+            width: 100%
+            height: 100%
+        &__text-box
+            width: 100%
+            margin-bottom: 1rem
+
+    .box-instagram
+        flex-direction: column
+        &__box-l
+            width: 100%
+
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+        &__box-img
+            height: 20vw
+
+
+@media (max-width: 767px)
+    .btn
+        font-size: 1.2rem
+        margin-bottom: 6px
+    .box-instagram
+        flex-direction: row
+        &__box-l
+            flex-direction: column
+            width: 50%
+            margin-bottom: 0
+            &:last-child
+                margin-bottom:
+        &__box-img
+            margin-bottom:
+            border-radius: 10px
+            overflow: hidden
+            width: 100%
+            height: 100%
+        &__img
+            width: 100%
+        &__a
+            margin-bottom: 20px
+            width: 100%
+
+@media (max-width: 500px)
+    .box-1
+        padding: 0 3vh
+    .header-color
+        margin-bottom: 1rem
+    .wrapper
+        margin-bottom: 0.8rem
+        &__li
+            font-size: 0.8rem
+
+        &__img-box
+            margin-bottom: 0.8rem
+    .text-title
+        font-size: 0.8rem
+        margin-bottom: 0.6rem
+    .text-reference
+        font-size: 0.8rem
+        margin-bottom: 0.6rem
+    .text
+        &_about
+        font-size: 0.8rem
+        margin-bottom: 0rem
+        &_list
+            margin-bottom: 0.4rem
+    .box-instagram
+        margin-bottom: 0.8rem
+    .icons_sm
+        width: 40px
+    .main-footer__link_h1
+        font-size: 0.8rem
+    .btn-close
+        top: 27px
+        right: 7%
+
+
