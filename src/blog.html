@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог Andrei Lipski</title>
+<!-- css -->
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/normalizes.css">
+
+<!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
+<!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bee6ba1240.js" crossorigin="anonymous"></script>
+<!-- css my -->
+    <link rel="stylesheet" href="css/blog.css">
+<!-- js my-->
+    <link rel="stylesheet" href="js/js.js">
+</head>
+<body>
+    <header>
+        <div class="header-color">
+            <div class="header">
+                <div class="header-wrapper box-1">
+                    <div class="img-logo">
+                        <p class="logo-text">ALipski</p>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-menu">
+                            <ul class="nav nav-header">
+                                <ul class="nav nav-header">
+                                    <li class="nav__list nav__list_h1"><a class="link__nav nav__list_h1" href="index.html">Обо мне</a></li>
+                                    <li class="nav__list nav__list_h1"><a class="link__nav nav__list_h1" href="blog.html">Блог</a></li>
+                                    <a class="nav__list" href="https://www.instagram.com/davinchi_andrei_lipski/" target="_blank">
+                                        <li class=""><i class="fa-brands fa-instagram"></i></li>
+                                    </a>
+                                    <a class="nav__list_h1" href="https://t.me/davinchi_andrei" target="_blank">
+                                        <li class=""><i class="fa-brands fa-telegram"></i></li>
+                                    </a>
+                                </ul>
+                        </nav>
+                    </div>
+                    <div class="nav-hamburger">
+                        <button class="btn btn-primary btn_hamb" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-down-square" viewBox="0 0 16 16">
+                                <path d="M3.626 6.832A.5.5 0 0 1 4 6h8a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 0 1-.748 0l-4-4.5z"/>
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2z"/>
+                              </svg>
+                        </button>
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                          <div class="offcanvas-header">
+                            <nav class="nav">
+                                <ul class="nav__li">
+                                    <li class=""><a class="link__nav nav__list_h1" href="index.html">Обо мне</a></li>
+                                    <li class=""><a class="link__nav nav__list_h1" href="blog.html">Блог</a></li>
+                                    <div class="box-hamb">
+                                        <a class="box-hamb__a" href="https://www.instagram.com/davinchi_andrei_lipski/" target="_blank">
+                                            <li class=""><i class="fa-brands fa-instagram"></i>
+                                            </li>
+                                        </a>
+                                        <a class="box-hamb__a" href="https://t.me/davinchi_andrei" target="_blank">
+                                            <li class=""><i class="fa-brands fa-telegram"></i>
+                                            </li>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </nav>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-2 bi-caret-up-square" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                    <path d="M3.544 10.705A.5.5 0 0 0 4 11h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5a.5.5 0 0 0-.082.537z"/>
+                                  </svg>
+                            </button>
+                            
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <section class="blog-menu box-1">
+        <a href="#article-1">
+            <button type="button" class="btn btn-outline-warning btn-large">Чайным ценителям.<br>
+                Часть 1.</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-outline-primary btn-large">?</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-outline-secondary btn-large">?</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-outline-success btn-large">?</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-outline-danger btn-large">?</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-outline-info btn-large">?</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-outline-light btn-large">?</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-outline-dark btn-large">?</button>
+        </a>
+        
+    </section>
+    <main class="blog-first box-1">
+            <div class="blog-section-l" id="article-1" >
+                <div class="blog-box-color">
+                    <div class="blog-box blog-box-r">
+                        <div class="wrapper-left">
+                            <h2 class="text-blog-h">
+                                Чайным ценителям. <br>
+                                Часть 1.
+                            </h2>
+                            <p class="text-blog">Уже как второй год я увлекаюсь чаем. В этой стате раскажу свои впечатление от разного, в основном китайского чая. Не буду мудрить с описанием вкусовых нот которые так красочно втирают продавцы или "знатоки", а просот и котротко опишу свои ощущения.
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                ...
+                                </button></p>
+                        </div>
+                        <div class="wrapper-right">
+                            <div class="wr-img">
+                                <img class="blog-img" src="img/blog-main/tea.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>То Ча</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, квадрат, 6 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (покупал в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>пустой не насыщенный</p>
+                                <p class="card-box__text"><b>Крепость: </b>слабый</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-1.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Шу точа Сяо то</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, квадрат, 6 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (покупал в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>насыщенный, земленистый, кисловат</p>
+                                <p class="card-box__text"><b>Крепость: </b>середина</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-2.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Золотой медальон</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, круг, 6 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (покупал в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>слабо землянистый</p>
+                                <p class="card-box__text"><b>Крепость: </b>слабый</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-3.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Sticky Rice Puerh</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, круг, 6 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (привезен из Китая)</p>
+                                <p class="card-box__text"><b>Вкус: </b>необычный вкус, соломенный, не горький, хорош</p>
+                                <p class="card-box__text"><b>Крепость: </b>середина</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-4.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Юннаньский Пуэр</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, квадрат, 50 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (куплен в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>отличный вкус, землянистый, хороший, по мне классический Шу пуэр</p>
+                                <p class="card-box__text"><b>Крепость: </b>гуд</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-5.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Пуэр</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, круг, 6 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (куплен в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>отличный вкус, землянистый, запах при заваривании травы сенакоса</p>
+                                <p class="card-box__text"><b>Крепость: </b>средняя</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-6.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Жемчужина Дракона Булань Шань</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, шар, 8-9 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (куплен в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>средне землянистый</p>
+                                <p class="card-box__text"><b>Крепость: </b>средняя</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-7.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Мини То Ча</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, квадрат, 6 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (куплен в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>средне землянистый</p>
+                                <p class="card-box__text"><b>Крепость: </b>гуд</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-8.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Юннаньский пуэр 2003 года</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, квадрат, 6 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (куплен в РБ)</p>
+                                <p class="card-box__text"><b>Вкус: </b>средне землянистый, ореховый, приятный</p>
+                                <p class="card-box__text"><b>Крепость: </b>середина</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-9.png" alt="foto tea">
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="card-box__text-box">
+                                <p class="card-box__text"><b>Название: </b>Шу пуэр 7562 в бамбуке.</p>
+                                <p class="card-box__text"><b>Вид: </b>Шу пуэр, кирпич, 250 грамм</p>
+                                <p class="card-box__text"><b>Происхождение: </b>Китай (куплен через Алик)</p>
+                                <p class="card-box__text"><b>Вкус: </b> землянистый, приятный запах и вкус</p>
+                                <p class="card-box__text"><b>Крепость: </b>гуд</p>
+                                <p class="card-box__text"><b>Оченка: </b> 
+                                    <img class="card-box__icons" src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                    <img class="card-box__icons"src="icons/star.png" alt="star">
+                                </p>
+                            </div>
+                            <div class="card-box__img-box">
+                                <img class="card-box__img" src="img/tea/tea-10.png" alt="foto tea">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-primary_close-box">
+                        <button class="btn btn-primary btn-primary_close" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Закрыть
+                        </button></div>
+                    </div>
+            </div>
+            <div class=" blog-title">
+            </div>
+            <div class="blog-section-r">
+                <div class="blog-box-color">
+                    <div class="blog-box blog-box-l">
+                        <div class="wrapper-right">
+                            <div class="wr-img">
+                                <img class="blog-img" src="img/tea1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="wrapper-left">
+                            <h2 class="text-blog-h" >
+                                Lorem ipsum dolor
+                            </h2>
+                            <p class="text-blog">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae reiciendis nulla error odio, consequatur consequuntur id quaerat quisquam doloribus ipsum dolor illum rem, alias voluptas fugiat dignissimos tempora perferendis voluptates.Lorem ipsum dolor sit amet consectetur, adipisicing
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample">
+                                ...
+                                </button></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample-1">
+                    <div class="card card-body">
+                        Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+                        <div class="btn-primary_close-box">
+                            <button class="btn btn-primary btn-primary_close" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample">
+                                Закрыть
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer__nav box-1">
+            <a class="main-footer__link main-footer__link_h1" href="index.html">© 2022 Andrei Lipski</a>
+            <p class="footer-text" >Viam supervadet vadens</p>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
