@@ -212,42 +212,59 @@ ul
         font-size: 1.6rem
 
 @media (max-width: 992px)
-    .nav_footer
-        display: none
+
     .main-footer__nav
         justify-content: center
-    .nav-header
-        display: none
+
     .nav-hamburger
         display: flex
         align-items: center
-    .offcanvas 
-        --bs-offcanvas-height: 220px
-        background: #423e86dd
-    .offcanvas-header
+    .nav-menu
+        position: fixed
+        top: -100%
+        right: 0
+        height: 290px
+        width: 100%
+        background-color: #413e86
+        z-index: 20
+        transition: 1.2s all
         justify-content: center
-        padding: 0
-        padding-top: 20px
-    .nav
-        &__li
-            padding: 0
-            text-align: center
-    .btn-close 
-        position: absolute
-        top: 27px
-        right: 52px
-        background: 
-        border: 0
-        color: #ffffff
-        opacity: 1
+        &__list
+            flex-direction: column
+        &__list-item
+            margin-right: 0
+            font-size: 20px
+            padding-top: 30px
     .hamburger
-        &__a
-            color: #ffffff
-    .fa-brands
-        padding: 0
-    .bi-2
-        color: #ffffff
-        background: #423e86
+        width: 30px
+        position: fixed
+        top: 37px
+        right: 8vw
+        height: 14px
+        z-index: 31
+        span
+            height: 2px
+            width: 100%
+            background: #ffffff
+            display: block
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active
+        span
+            background: #Ffff
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        display: block
+        top: 0%
+
     .header-color
         margin-bottom: 1.6rem
     .wrepper_r

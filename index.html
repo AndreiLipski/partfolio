@@ -33,50 +33,25 @@
                     </div>
                     <div class="header-nav">
                         <nav class="nav-menu">
-                            <ul class="nav nav-header">
-                                <li class="nav__list nav__list_h1"><a class="link__nav nav__list_h1" href="index.html">Обо мне</a></li>
-                                <li class="nav__list nav__list_h1"><a class="link__nav nav__list_h1" href="blog.html">Блог</a></li>
-                                <a class="nav__list" href="https://www.instagram.com/davinchi_andrei_lipski/" target="_blank">
-                                    <li class=""><i class="fa-brands fa-instagram"></i></li>
-                                </a>
-                                <a class="nav__list_h1" href="https://t.me/davinchi_andrei" target="_blank">
-                                    <li class=""><i class="fa-brands fa-telegram"></i></li>
-                                </a>
+                            <ul class="nav nav-header nav-menu__list">
+                                <li class="nav__list nav__list_h1 nav-menu__list-item"><a class="link__nav nav__list_h1" href="index.html">Обо мне</a></li>
+                                <li class="nav__list nav__list_h1 nav-menu__list-item"><a class="link__nav nav__list_h1" href="blog.html">Блог</a></li>
+                                <li class="nav-menu__list-item  nav__list">
+                                    <a class="nav__list" href="https://www.instagram.com/davinchi_andrei_lipski/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-menu__list-item">
+                                    <a class="nav__list_h1" href="https://t.me/davinchi_andrei" target="_blank">
+                                        <li class=""><i class="fa-brands fa-telegram"></i></li>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="nav-hamburger">
-                        <button class="btn btn-primary btn_hamb" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-down-square" viewBox="0 0 16 16">
-                                <path d="M3.626 6.832A.5.5 0 0 1 4 6h8a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 0 1-.748 0l-4-4.5z"/>
-                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2z"/>
-                              </svg>
-                        </button>
-                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                          <div class="offcanvas-header">
-                            <nav class="nav">
-                                <ul class="nav__li">
-                                    <li class=""><a class="link__nav nav__list_h1" href="index.html">Обо мне</a></li>
-                                    <li class=""><a class="link__nav nav__list_h1" href="blog.html">Блог</a></li>
-                                    <div class="box-hamb">
-                                        <a class="box-hamb__a" href="https://www.instagram.com/davinchi_andrei_lipski/" target="_blank">
-                                            <li class=""><i class="fa-brands fa-instagram"></i>
-                                            </li>
-                                        </a>
-                                        <a class="box-hamb__a" href="https://t.me/davinchi_andrei" target="_blank">
-                                            <li class=""><i class="fa-brands fa-telegram"></i>
-                                            </li>
-                                        </a>
-                                    </div>
-                                </ul>
-                            </nav>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-2 bi-caret-up-square" viewBox="0 0 16 16">
-                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                    <path d="M3.544 10.705A.5.5 0 0 0 4 11h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5a.5.5 0 0 0-.082.537z"/>
-                                  </svg>
-                            </button>
-                          </div>
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -190,5 +165,6 @@
     </footer>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/burger.js"></script>
 </body>
 </html>
