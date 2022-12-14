@@ -33,6 +33,16 @@ ul
 .img-logo
     display: flex
     align-items: center
+    position: relative
+    transform: translate(120%, 0px )
+    opacity: 0
+    transition: all 1s ease 0s
+
+._active
+    transform: translate(0px, 0px )
+    opacity: 1
+
+
 .logo-text
     font-size: 2rem
     font-family: 'El Messiri', sans-serif
@@ -49,7 +59,7 @@ ul
         margin-right: 2rem
 
 .nav__list_h1:hover
-    color: #4377cb;
+    color: #4377cb
     transition: 0.4s
 .nav-header
     color: #ffff
@@ -136,9 +146,9 @@ ul
         width: 33.33%
         height: 100%
         &:hover
-            -webkit-box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28);
-            -moz-box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28);
-            box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28);
+            -webkit-box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28)
+            -moz-box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28)
+            box-shadow: 0px 5px 25px 2px rgba(23, 24, 24, 0.28)
             border-radius: 10px
         &:last-child
             margin: 0
@@ -162,7 +172,7 @@ ul
     border: 0
     font-size: 1rem
 .btn:hover
-    background: #4377cb;
+    background: #4377cb
 .blog-menu
     display: none
 .main-footer
@@ -174,7 +184,7 @@ ul
         text-align: center
     &__link
         text-decoration: none
-        color: #ffffff;
+        color: #ffffff
         font-size: 1rem
         &_h1:hover
             color: #4377cb
@@ -306,9 +316,8 @@ ul
             width: 50%
             margin-bottom: 0
             &:last-child
-                margin-bottom:
+
         &__box-img
-            margin-bottom:
             border-radius: 10px
             overflow: hidden
             width: 100%
