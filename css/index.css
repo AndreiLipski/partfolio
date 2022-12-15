@@ -21,10 +21,47 @@ ul {
   padding: 0;
 }
 
+.box-inst__1 {
+  z-index: -3;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.29, 1.26) 0.6s;
+  transform: translate(-100vw, 0px);
+}
+.box-inst__2 {
+  z-index: -3;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.29, 1.26) 0.3s;
+  transform: translate(-100vw, 0px);
+}
+.box-inst__3 {
+  z-index: -3;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.29, 1.26) 0s;
+  transform: translate(-100vw, 0px);
+}
+.box-inst__4 {
+  z-index: -3;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.29, 1.26) 0s;
+  transform: translate(100vw, 0px);
+}
+.box-inst__5 {
+  z-index: -3;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.29, 1.26) 0.3s;
+  transform: translate(100vw, 0px);
+}
+.box-inst__6 {
+  z-index: -3;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.29, 1.26) 0.6s;
+  transform: translate(100vw, 0px);
+}
+
+.active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 .box-1 {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 12vh;
+  overflow: hidden;
 }
 
 .header {
@@ -51,9 +88,6 @@ ul {
   display: flex;
   align-items: center;
   position: relative;
-  transform: translate(120%, 0px);
-  opacity: 0;
-  transition: all 1s ease 0s;
 }
 
 ._active {
@@ -62,10 +96,9 @@ ul {
 }
 
 .logo-text {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "El Messiri", sans-serif;
   color: #fff;
-  padding: 20px 0;
 }
 
 .nav-menu {
@@ -133,6 +166,7 @@ ul {
   width: 48%;
   border-radius: 5%;
   overflow: hidden;
+  display: block;
 }
 .wrapper__img {
   width: 100%;
@@ -178,7 +212,7 @@ ul {
 }
 
 .wrapper_1 {
-  margin-top: 120px;
+  margin-top: 70px;
   margin-bottom: 3rem;
 }
 
@@ -443,6 +477,7 @@ ul {
   }
   .box-instagram__img {
     width: 100%;
+    max-height: 180px;
   }
   .box-instagram__a {
     margin-bottom: 20px;

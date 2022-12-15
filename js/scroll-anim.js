@@ -1,5 +1,5 @@
 
-const animItems = document.querySelectorAll('._anim-items');
+const animItems = document.querySelectorAll('.anim-items');
 
 if (animItems.length > 0){
     window.addEventListener('scroll', animOnScroll);
@@ -17,9 +17,9 @@ if (animItems.length > 0){
             }
             
             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-                animItem.classList.add('_active');                
+                animItem.classList.add('active');                
             } else {
-                animItem.classList.remove('_active');
+                animItem.classList.remove('active');
             }
         }
     }
