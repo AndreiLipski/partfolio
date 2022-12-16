@@ -110,6 +110,14 @@ ul
         margin-right: 20px
         &:last-child
             margin-right: 0
+.hamb-night
+    position: fixed
+    left: 0
+    bottom: -100%
+    height: calc(100vh - 96px) 
+    width: 100vw
+    background-color: #423e8664
+    transition: 1s
 .wrapper
     display: flex
     justify-content: space-between
@@ -303,6 +311,20 @@ ul
     .nav-menu_active
         display: block
         top: 0%
+    .hamb-night
+        position: fixed
+        bottom: -100%
+        transition: 1.2s all
+    .hamb-night_active
+        display: block
+        
+        left: 0
+        bottom: 0
+        z-index: -1
+
+    .body_active
+        overflow: hidden
+
     .header-color
         margin-bottom: 1.6rem
     .wrepper_r
